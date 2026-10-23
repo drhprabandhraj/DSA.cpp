@@ -6,10 +6,10 @@ int main () {
    //char ch = 'A';
 
    for (int i=1; i<=n; i++) {
-      char ch = 'A';
+     // char ch = 'A';
       for (int j=1; j<=n; j++) {
-         cout <<ch ;
-         ch++;
+         cout <<"* " ;
+         //ch++;
       }
       cout <<endl;
    }
