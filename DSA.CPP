@@ -2,15 +2,15 @@
 using namespace std;
 int main () {
 
-   int n=3;
-   char ch = 'A';
+   int n=4;
+   //char ch = 'A';
    //int num=1;
 
    for (int i=1; i<=n; i++) {
       //char ch = 'A';
-      for (int j=1; j<=n; j++) {
-         cout <<ch <<" ";
-         ch++;
+      for (int j=1; j<=i; j++) {
+         cout <<"*" <<" ";
+         //ch++;
         // num++;
       }
       cout <<endl;
