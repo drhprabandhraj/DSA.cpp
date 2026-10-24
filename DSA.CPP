@@ -3,7 +3,8 @@ using namespace std;
 int main () {
 
    int n=5;
-   int num=1;
+   //int num=1;
+   char ch= 'A';
 
    for (int i=1; i<=n; i++) {
       
@@ -11,9 +12,10 @@ int main () {
          cout <<" " ;
       }
       for (int k=1; k<=n-i; k++) {
-         cout <<num;
+         cout <<ch;
       }
-      num++;
+      //num++;
+      ch++;
       cout <<endl;
    }
    return 0;
