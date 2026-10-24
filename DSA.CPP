@@ -4,18 +4,18 @@ int main () {
 
    int n=4;
    //char ch = 'A';
+   int num =1; 
    
 
    for (int i=1; i<=n; i++) {
    
-      for (int j=i; j>0; j--) {
+      for (int j=1; j<=i; j++) {
          //cout <<j <<" ";
-      cout <<j;
-      
+      cout <<num;
+      num++;
       }
+      
       //cout <<num;
-      
-      
       
       cout <<endl;
    }
