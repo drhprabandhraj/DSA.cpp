@@ -2,21 +2,10 @@
 using namespace std;
 int main () {
 
-   int n=5;
-   //int num=1;
-   char ch= 'A';
+   int arr[5] = {10, 20, 30, 40, 50};
 
-   for (int i=1; i<=n; i++) {
-      
-      for (int j=1; j<=i; j++) {
-         cout <<" " ;
-      }
-      for (int k=1; k<=n-i; k++) {
-         cout <<ch;
-      }
-      //num++;
-      ch++;
-      cout <<endl;
+   for (int i=0; i<5; i++) {
+      cout <<arr[i] <<" ";
    }
    return 0;
 }
