@@ -4,11 +4,15 @@ int main () {
 
    int arr[5] = {10, 20, 30, 40, 50};
 
-   int sum = 0;
+   int largest = arr[0];
 
    for (int i=0; i<5; i++) {
-      sum += arr[i];
+      if (largest < arr[i]) {
+         largest = arr[i];
+      }
+      
    }
-   cout <<sum;
+   cout <<largest;
+   
    return 0;
 }
