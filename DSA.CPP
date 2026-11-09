@@ -2,17 +2,17 @@
 using namespace std;
 int main () {
 
-   int arr[5] = {10, 20, 30, 05, 50};
+   int arr[7] = {10, 15, 20, 25, 30, 35, 40};
 
-   int smallest = arr[0];
+   //int smallest = arr[0];
 
-   for (int i=0; i<5; i++) {
-      if (smallest > arr[i]) {
-         smallest = arr[i];
+   for (int i=0; i<7; i++) {
+      if (arr[i] % 2 == 0){
+         cout <<arr[i] <<" " ;
       }
       
    }
-   cout <<smallest;
+   
    
    return 0;
 }
