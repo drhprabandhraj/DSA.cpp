@@ -1,27 +1,24 @@
 #include <iostream>
 using namespace std;
-int main () {
 
-   int arr[5] = {10, 20, 30, 40, 50};
-   int target = 30;
-   bool found = false;
-   //int size = sizeof(arr) / sizeof(arr[0]) ;
+int main() {
+   int arr[6] = {10, 50, 30, 80, 20, 60};
 
-   //int sum = 0;
+   int largest = arr[0];
+   int second = arr[0];
 
-   for (int i=0; i<5; i++)  {
-      if (arr[i] == target) {
-         found = true;
-         break;
+   for (int i=0; i<6; i++) {
+      if (arr[i] > largest) {
+         second = largest;
+         largest = arr[i];
+
       }
+      else if (arr[i] > second){
+         second = arr[i] ;
+      }
+      
    }
-   
-   if (found) {
-      cout <<"Element found" ;
-   }
-   else {
-      cout <<"Element not found" ;
-   }
-   
+   cout <<second;
+
    return 0;
 }
